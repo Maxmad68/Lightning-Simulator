@@ -1,0 +1,20 @@
+/*
+See LICENSE folder for this template’s licensing information.
+
+Abstract:
+Contains English localizations of values in Manifest.plist files in the playground book.
+*/
+
+/* The localized name of the playground book. */
+"PlaygroundBookName" = "Lightning Simulator";
+
+/* The localized name of the first chapter in the playground book. */
+"ChapterOneName" = "Lightning Simulator";
+
+/* The localized name of the first page in the first chapter in the playground book. */
+"page1Name" = "Sandbox";
+"page2Name" = "Don't stay under a tree";
+"page3Name" = "Lightning & Airplanes";
+
+
+"BookCore" = "BookCore";

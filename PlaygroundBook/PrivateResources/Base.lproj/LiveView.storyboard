@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcD-sv-Xiz">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simulation View Controller-->
+        <scene sceneID="HVS-ZB-wEb">
+            <objects>
+                <viewController storyboardIdentifier="LiveView" id="fcD-sv-Xiz" customClass="SimulationViewController" customModule="BookCore" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Rh2-0a-zph">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <subviews>
+                            <skView clipsSubviews="YES" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="amc-b9-fEY">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </skView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qaR-nP-dw0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="amc-b9-fEY" firstAttribute="trailing" secondItem="qaR-nP-dw0" secondAttribute="trailing" id="99f-dP-bgj"/>
+                            <constraint firstAttribute="bottom" secondItem="amc-b9-fEY" secondAttribute="bottom" id="QdI-xa-Kwc"/>
+                            <constraint firstItem="amc-b9-fEY" firstAttribute="top" secondItem="qaR-nP-dw0" secondAttribute="top" id="tcL-tb-n5Q"/>
+                            <constraint firstItem="amc-b9-fEY" firstAttribute="leading" secondItem="qaR-nP-dw0" secondAttribute="leading" id="uW2-Re-agn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="skView" destination="amc-b9-fEY" id="Ms5-rS-ngo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvi-wC-fap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.29136163982429" y="95.5078125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

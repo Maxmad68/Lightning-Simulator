@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>church</key>
+		<dict>
+			<key>Definition</key>
+			<string>Churches are the tallest elements of the terrain. They are interesting buildings, cause they are the ones that attract the most lightning bolts.
+
+Churches can be used in the simulation by adding `Church()` to the build closure.
+
+![Church](church.png)</string>
+			<key>Title</key>
+			<string>Church</string>
+		</dict>
+		<key>house</key>
+		<dict>
+			<key>Definition</key>
+			<string>Houses are the smallest elements of the terrain.
+You can add a house by inserting `House()` in the build closure.
+
+![House](house.png)</string>
+			<key>Title</key>
+			<string>House</string>
+		</dict>
+		<key>placement</key>
+		<dict>
+			<key>Definition</key>
+			<string>By default, elements are placed next to each other, from left to right.
+However, you can specify where you want the element to be built, by adding a `x` parameter to its constructor.
+The value of this parameter can be an Int, which will the horizontal position of the elements, or `.random`, which will build the element randomly in the simulation.
+
+ - `House(x: 200)`
+ - `Church(x: .random)`</string>
+			<key>Title</key>
+			<string>Placing elements</string>
+		</dict>
+		<key>plane</key>
+		<dict>
+			<key>Definition</key>
+			<string>I love planes. They are the most interesting elements in the simulator. They aim to show how lightning affect a flying plane. 
+They are the only elements that are not touching the ground of the terrain.
+
+You can add plane by adding `Plane()` to the build closure.
+
+You can also specify position of the plane with `x` and `altitude` attributes.
+ - `Plane(altitude: 400, x: 300)`
+
+  * Note: Planes will stay still, they won't move in the simulation
+
+![Plane](plane.png)</string>
+			<key>Title</key>
+			<string>Planes</string>
+		</dict>
+		<key>trees</key>
+		<dict>
+			<key>Definition</key>
+			<string>There are two kinds of trees. Pine trees are tall, while leafy trees are smaller.
+
+You can add trees with:
+ - `Tree(type: .pine)`
+ - `Tree(type: .leafy)`
+
+![Trees](trees.png)</string>
+			<key>Title</key>
+			<string>Trees</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

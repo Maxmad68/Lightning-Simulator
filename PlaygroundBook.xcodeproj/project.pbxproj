@@ -1,0 +1,1236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
+		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
+		5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */; };
+		5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E551EC42371FC3F00784365 /* Assets.xcassets */; };
+		5E6F7E6C2368FC01008CC191 /* BookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F7E5C2367B64A008CC191 /* BookAPI.swift */; };
+		5E70679F23678DC30094BDEF /* Modules in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E70679E23678DC00094BDEF /* Modules */; };
+		5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
+		5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveViewController.swift */; };
+		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
+		9C005DD326247C2C002EA4B5 /* Negative RRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C005DD226247C2C002EA4B5 /* Negative RRT.swift */; };
+		9C005FFD2626F1A5002EA4B5 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C005FFC2626F1A5002EA4B5 /* SoundManager.swift */; };
+		9C087D402628466700167366 /* StarsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C087D3F2628466700167366 /* StarsLayer.swift */; };
+		9C087D412628466700167366 /* StarsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C087D3F2628466700167366 /* StarsLayer.swift */; };
+		9C3155522622FAE400FF8736 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9402622151200246ED7 /* Moon.swift */; };
+		9C3155532622FAE400FF8736 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9682622155300246ED7 /* Clouds.swift */; };
+		9C3155542622FAE400FF8736 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9582622152B00246ED7 /* Bird.swift */; };
+		9C3155552622FAE400FF8736 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9602622153F00246ED7 /* Rain.swift */; };
+		9C31555B2622FAE700FF8736 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFE25B4470000968630 /* Functions.swift */; };
+		9C31555C2622FAE700FF8736 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFD25B4470000968630 /* SimulationViewController.swift */; };
+		9C31555D2622FAE700FF8736 /* AddBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFC25B4470000968630 /* AddBuilding.swift */; };
+		9C31555E2622FAE700FF8736 /* RRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE6DDED2618E3BA00F7AEB7 /* RRT.swift */; };
+		9C31555F2622FAE700FF8736 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1D0025B4470000968630 /* Definitions.swift */; };
+		9C3155602622FAE700FF8736 /* SimulationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFF25B4470000968630 /* SimulationScene.swift */; };
+		9C3155B0262301D300FF8736 /* SimuationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155AF262301D300FF8736 /* SimuationMethods.swift */; };
+		9C4A8D09261C5B5700EEAE99 /* lightningAirplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A8D08261C5B5700EEAE99 /* lightningAirplane.png */; };
+		9C50C6DA261F140B008E8DE5 /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C6D9261F140B008E8DE5 /* chicken.png */; };
+		9C50C72A261F7115008E8DE5 /* rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C729261F7115008E8DE5 /* rain.wav */; };
+		9C50C730261F7165008E8DE5 /* thunder1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C72F261F7165008E8DE5 /* thunder1.wav */; };
+		9C50C740261F7451008E8DE5 /* thunder2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C73F261F7451008E8DE5 /* thunder2.wav */; };
+		9C50C74C261F7489008E8DE5 /* thunder3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C74B261F7489008E8DE5 /* thunder3.wav */; };
+		9C50C76C261F7F7E008E8DE5 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C76B261F7F7E008E8DE5 /* License.txt */; };
+		9C50C7A5261F836E008E8DE5 /* License.txt in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 9C50C76B261F7F7E008E8DE5 /* License.txt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9C50C7ED26204DCF008E8DE5 /* clouds1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C7EB26204DCF008E8DE5 /* clouds1.png */; };
+		9C50C7EE26204DCF008E8DE5 /* clouds2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C7EC26204DCF008E8DE5 /* clouds2.png */; };
+		9C50C81426205E38008E8DE5 /* chicken.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C81326205E38008E8DE5 /* chicken.wav */; };
+		9C5440FA262ADC5000E649D2 /* cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C5440F9262ADC5000E649D2 /* cover.jpeg */; };
+		9C5442A4262B1FBB00E649D2 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5442A3262B1FBB00E649D2 /* Layers.swift */; };
+		9C5442A5262B1FBB00E649D2 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5442A3262B1FBB00E649D2 /* Layers.swift */; };
+		9C5442AB262B208600E649D2 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5442A3262B1FBB00E649D2 /* Layers.swift */; };
+		9C5442B1262B208600E649D2 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5442A3262B1FBB00E649D2 /* Layers.swift */; };
+		9C95C9A026233B1800D57E71 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95C99F26233B1800D57E71 /* DataDecoder.swift */; };
+		9C9FCA402619C9B500DB32E8 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3B2619C9B500DB32E8 /* plane.png */; };
+		9C9FCA412619C9B500DB32E8 /* leafy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3C2619C9B500DB32E8 /* leafy.png */; };
+		9C9FCA422619C9B500DB32E8 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3D2619C9B500DB32E8 /* house.png */; };
+		9C9FCA432619C9B500DB32E8 /* pine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3E2619C9B500DB32E8 /* pine.png */; };
+		9C9FCA442619C9B500DB32E8 /* church.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3F2619C9B500DB32E8 /* church.png */; };
+		9C9FCA562619CB6500DB32E8 /* trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA552619CB6500DB32E8 /* trees.png */; };
+		9CBF7B8D2626F88200C7D1C4 /* Bolt Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7B8C2626F88200C7D1C4 /* Bolt Generation.swift */; };
+		9CBF7B9E262702E800C7D1C4 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7B9D262702E800C7D1C4 /* Lines.swift */; };
+		9CBF7BA926270D1600C7D1C4 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1D0025B4470000968630 /* Definitions.swift */; };
+		9CBF7BAA26270D1600C7D1C4 /* AddBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFC25B4470000968630 /* AddBuilding.swift */; };
+		9CBF7BAB26270D1600C7D1C4 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95C99F26233B1800D57E71 /* DataDecoder.swift */; };
+		9CBF7BAC26270D1600C7D1C4 /* SimuationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3155AF262301D300FF8736 /* SimuationMethods.swift */; };
+		9CBF7BB226270D2000C7D1C4 /* Bolt Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7B8C2626F88200C7D1C4 /* Bolt Generation.swift */; };
+		9CBF7BB326270D2000C7D1C4 /* SimulationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFF25B4470000968630 /* SimulationScene.swift */; };
+		9CBF7BB426270D2000C7D1C4 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7B9D262702E800C7D1C4 /* Lines.swift */; };
+		9CBF7BB526270D2000C7D1C4 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFD25B4470000968630 /* SimulationViewController.swift */; };
+		9CBF7BB626270D2000C7D1C4 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E1CFE25B4470000968630 /* Functions.swift */; };
+		9CBF7BB726270D2000C7D1C4 /* RRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE6DDED2618E3BA00F7AEB7 /* RRT.swift */; };
+		9CBF7BB826270D2000C7D1C4 /* Negative RRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C005DD226247C2C002EA4B5 /* Negative RRT.swift */; };
+		9CBF7BBA26270D2000C7D1C4 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C005FFC2626F1A5002EA4B5 /* SoundManager.swift */; };
+		9CBF7BBB26270D2000C7D1C4 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9402622151200246ED7 /* Moon.swift */; };
+		9CBF7BBC26270D2000C7D1C4 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9582622152B00246ED7 /* Bird.swift */; };
+		9CBF7BBD26270D2000C7D1C4 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9602622153F00246ED7 /* Rain.swift */; };
+		9CBF7BBE26270D2000C7D1C4 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F9682622155300246ED7 /* Clouds.swift */; };
+		9CBF7BCE26270D5300C7D1C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F8CB26220E9400246ED7 /* AppDelegate.swift */; };
+		9CBF7BD426270D5900C7D1C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0F8CD26220E9400246ED7 /* SceneDelegate.swift */; };
+		9CD0F8542621FFDB00246ED7 /* cloud3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8512621FFDB00246ED7 /* cloud3.png */; };
+		9CD0F8552621FFDB00246ED7 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8522621FFDB00246ED7 /* cloud1.png */; };
+		9CD0F8562621FFDB00246ED7 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8532621FFDB00246ED7 /* cloud2.png */; };
+		9CD0F8D326220E9400246ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8D126220E9400246ED7 /* Main.storyboard */; };
+		9CD0F8D526220E9500246ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8D426220E9500246ED7 /* Assets.xcassets */; };
+		9CD0F8D826220E9500246ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8D626220E9500246ED7 /* LaunchScreen.storyboard */; };
+		9CD0F8FE26220F1000246ED7 /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C6D9261F140B008E8DE5 /* chicken.png */; };
+		9CD0F8FF26220F1000246ED7 /* lightningAirplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A8D08261C5B5700EEAE99 /* lightningAirplane.png */; };
+		9CD0F90526220F1600246ED7 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8532621FFDB00246ED7 /* cloud2.png */; };
+		9CD0F90626220F1600246ED7 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8522621FFDB00246ED7 /* cloud1.png */; };
+		9CD0F90726220F1600246ED7 /* cloud3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD0F8512621FFDB00246ED7 /* cloud3.png */; };
+		9CD0F90D26220F1A00246ED7 /* clouds1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C7EB26204DCF008E8DE5 /* clouds1.png */; };
+		9CD0F90E26220F1A00246ED7 /* clouds2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C7EC26204DCF008E8DE5 /* clouds2.png */; };
+		9CD0F91426220F1F00246ED7 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3D2619C9B500DB32E8 /* house.png */; };
+		9CD0F91526220F1F00246ED7 /* leafy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3C2619C9B500DB32E8 /* leafy.png */; };
+		9CD0F91626220F1F00246ED7 /* church.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3F2619C9B500DB32E8 /* church.png */; };
+		9CD0F91726220F1F00246ED7 /* pine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3E2619C9B500DB32E8 /* pine.png */; };
+		9CD0F91826220F1F00246ED7 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA3B2619C9B500DB32E8 /* plane.png */; };
+		9CD0F91926220F1F00246ED7 /* trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9FCA552619CB6500DB32E8 /* trees.png */; };
+		9CD0F91F26220F2400246ED7 /* chicken.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C81326205E38008E8DE5 /* chicken.wav */; };
+		9CD0F92026220F2400246ED7 /* rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C729261F7115008E8DE5 /* rain.wav */; };
+		9CD0F92626220F2800246ED7 /* thunder3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C74B261F7489008E8DE5 /* thunder3.wav */; };
+		9CD0F92726220F2800246ED7 /* thunder2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C73F261F7451008E8DE5 /* thunder2.wav */; };
+		9CD0F92826220F2800246ED7 /* thunder1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C72F261F7165008E8DE5 /* thunder1.wav */; };
+		9CD0F92E26220F2C00246ED7 /* Glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CE6DE5F2619B7F100F7AEB7 /* Glossary.plist */; };
+		9CD0F9392622107B00246ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E551EC42371FC3F00784365 /* Assets.xcassets */; };
+		9CE6DE602619B7F100F7AEB7 /* Glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CE6DE5F2619B7F100F7AEB7 /* Glossary.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		5E086DD42051E415004D8D25 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*/Manifest.plist";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "mkdir -p \"${DERIVED_FILE_DIR}\"\n\n\"${PROJECT_DIR}\"/SupportingContent/Tools/expandBuildSettingReferences --output \"${SCRIPT_OUTPUT_FILE_0}\" --use-environment \"${SCRIPT_INPUT_FILE}\"\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		5E6F7E682368FB79008CC191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2A7ADD204F611300F4E17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF2F9AA2054BBF300191409;
+			remoteInfo = BookCore;
+		};
+		5E6F7E6E2368FD7C008CC191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2A7ADD204F611300F4E17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E6F7E602368FB6A008CC191;
+			remoteInfo = BookAPI;
+		};
+		5E6F7E7B2368FF1D008CC191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2A7ADD204F611300F4E17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E6F7E602368FB6A008CC191;
+			remoteInfo = BookAPI;
+		};
+		5E6F7E7E2368FF3D008CC191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2A7ADD204F611300F4E17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E6F7E732368FF15008CC191;
+			remoteInfo = UserModule;
+		};
+		5EF2F9B42054BDD100191409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2A7ADD204F611300F4E17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF2F9AA2054BBF300191409;
+			remoteInfo = Book_Sources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E086DD22051E35D004D8D25 /* Copy Book Contents */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				9C50C7A5261F836E008E8DE5 /* License.txt in Copy Book Contents */,
+				5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */,
+				5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */,
+				5E70679F23678DC30094BDEF /* Modules in Copy Book Contents */,
+			);
+			name = "Copy Book Contents";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C50C77A261F801A008E8DE5 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E086DC02051C5A7004D8D25 /* Lightning Simulator.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lightning Simulator.playgroundbook"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
+		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
+		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
+		5E0E37522065981C008FA4BE /* BuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BuildSettings.xcconfig; sourceTree = "<group>"; };
+		5E0E37542065A065008FA4BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5E1004BE208E7F6E00BCFE70 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5E2A7AE6204F630600F4E17A /* BaseBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BaseBuildSettings.xcconfig; sourceTree = "<group>"; };
+		5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewSupport.swift; sourceTree = "<group>"; };
+		5E551EC42371FC3F00784365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E6F7E5C2367B64A008CC191 /* BookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPI.swift; sourceTree = "<group>"; };
+		5E6F7E612368FB6A008CC191 /* libBookAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ModuleOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
+		5E6F7E742368FF15008CC191 /* libUserModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUserModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E70679E23678DC00094BDEF /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		5EA2E3D72056F88700416A35 /* PlaygroundSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlaygroundSupport.framework; sourceTree = PLAYGROUNDS_FRAMEWORKS_DIR; };
+		5EA2E3D82056F88700416A35 /* PlaygroundBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlaygroundBluetooth.framework; sourceTree = PLAYGROUNDS_FRAMEWORKS_DIR; };
+		5EBEC2EF205B396500975D3F /* LiveViewHost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiveViewHost.framework; sourceTree = OTHER_FRAMEWORKS_DIR; };
+		5EF2F97D2054B6E400191409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ManifestPlist.strings; sourceTree = "<group>"; };
+		5EF2F9AB2054BBF300191409 /* libBookCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF2F9AD2054BBF300191409 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		9C005DD226247C2C002EA4B5 /* Negative RRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Negative RRT.swift"; sourceTree = "<group>"; };
+		9C005FFC2626F1A5002EA4B5 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		9C087D3F2628466700167366 /* StarsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsLayer.swift; sourceTree = "<group>"; };
+		9C3155AF262301D300FF8736 /* SimuationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuationMethods.swift; sourceTree = "<group>"; };
+		9C4A8D08261C5B5700EEAE99 /* lightningAirplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightningAirplane.png; sourceTree = "<group>"; };
+		9C4A8D4C261C649F00EEAE99 /* coverOld.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coverOld.jpeg; sourceTree = "<group>"; };
+		9C50C6D9261F140B008E8DE5 /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		9C50C729261F7115008E8DE5 /* rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rain.wav; sourceTree = "<group>"; };
+		9C50C72F261F7165008E8DE5 /* thunder1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thunder1.wav; sourceTree = "<group>"; };
+		9C50C73F261F7451008E8DE5 /* thunder2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thunder2.wav; sourceTree = "<group>"; };
+		9C50C74B261F7489008E8DE5 /* thunder3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thunder3.wav; sourceTree = "<group>"; };
+		9C50C76B261F7F7E008E8DE5 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		9C50C7EB26204DCF008E8DE5 /* clouds1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds1.png; sourceTree = "<group>"; };
+		9C50C7EC26204DCF008E8DE5 /* clouds2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds2.png; sourceTree = "<group>"; };
+		9C50C81326205E38008E8DE5 /* chicken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chicken.wav; sourceTree = "<group>"; };
+		9C5440F9262ADC5000E649D2 /* cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpeg; sourceTree = "<group>"; };
+		9C5442A3262B1FBB00E649D2 /* Layers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
+		9C95C99F26233B1800D57E71 /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		9C9E1CFC25B4470000968630 /* AddBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBuilding.swift; sourceTree = "<group>"; };
+		9C9E1CFD25B4470000968630 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		9C9E1CFE25B4470000968630 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		9C9E1CFF25B4470000968630 /* SimulationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationScene.swift; sourceTree = "<group>"; };
+		9C9E1D0025B4470000968630 /* Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		9C9FCA3B2619C9B500DB32E8 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		9C9FCA3C2619C9B500DB32E8 /* leafy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leafy.png; sourceTree = "<group>"; };
+		9C9FCA3D2619C9B500DB32E8 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		9C9FCA3E2619C9B500DB32E8 /* pine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pine.png; sourceTree = "<group>"; };
+		9C9FCA3F2619C9B500DB32E8 /* church.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = church.png; sourceTree = "<group>"; };
+		9C9FCA552619CB6500DB32E8 /* trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees.png; sourceTree = "<group>"; };
+		9CBF7B8C2626F88200C7D1C4 /* Bolt Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolt Generation.swift"; sourceTree = "<group>"; };
+		9CBF7B9D262702E800C7D1C4 /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
+		9CD0F8512621FFDB00246ED7 /* cloud3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud3.png; sourceTree = "<group>"; };
+		9CD0F8522621FFDB00246ED7 /* cloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud1.png; sourceTree = "<group>"; };
+		9CD0F8532621FFDB00246ED7 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud2.png; sourceTree = "<group>"; };
+		9CD0F8C926220E9400246ED7 /* LightningSimulatorTestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightningSimulatorTestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD0F8CB26220E9400246ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CD0F8CD26220E9400246ED7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CD0F8D226220E9400246ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CD0F8D426220E9500246ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CD0F8D726220E9500246ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CD0F8D926220E9500246ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD0F8EC26220EB900246ED7 /* LightningSimulatorTestapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightningSimulatorTestapp.entitlements; sourceTree = "<group>"; };
+		9CD0F9402622151200246ED7 /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		9CD0F9582622152B00246ED7 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		9CD0F9602622153F00246ED7 /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		9CD0F9682622155300246ED7 /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		9CE6DDED2618E3BA00F7AEB7 /* RRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRT.swift; sourceTree = "<group>"; };
+		9CE6DE5F2619B7F100F7AEB7 /* Glossary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Glossary.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E6F7E5E2368FB6A008CC191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E6F7E712368FF15008CC191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF2F9A82054BBF300191409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD0F8C626220E9400246ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E086DA4204F706E004D8D25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E086DC02051C5A7004D8D25 /* Lightning Simulator.playgroundbook */,
+				5EF2F9AB2054BBF300191409 /* libBookCore.a */,
+				5E6F7E612368FB6A008CC191 /* libBookAPI.a */,
+				5E6F7E742368FF15008CC191 /* libUserModule.a */,
+				9CD0F8C926220E9400246ED7 /* LightningSimulatorTestapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E086DC12051C5A7004D8D25 /* PlaygroundBook */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C76B261F7F7E008E8DE5 /* License.txt */,
+				5E086DCF2051DF0F004D8D25 /* Manifest.plist */,
+				5E70679B23678D810094BDEF /* Modules */,
+				5EF2F9792054B64800191409 /* PrivateResources */,
+				5EF2F9B62054E6F900191409 /* Chapters */,
+				5EF2F9A42054BB9500191409 /* Supporting Content */,
+			);
+			path = PlaygroundBook;
+			sourceTree = "<group>";
+		};
+		5E0E3751206597E7008FA4BE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E2A7AE6204F630600F4E17A /* BaseBuildSettings.xcconfig */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E0E3753206599A0008FA4BE /* Overrides */ = {
+			isa = PBXGroup;
+			children = (
+				5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */,
+				5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */,
+			);
+			path = Overrides;
+			sourceTree = "<group>";
+		};
+		5E1004BD208E7F6E00BCFE70 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				5E1004BE208E7F6E00BCFE70 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		5E2A7ADC204F611300F4E17A = {
+			isa = PBXGroup;
+			children = (
+				5E0E37542065A065008FA4BE /* README.md */,
+				5E086DC12051C5A7004D8D25 /* PlaygroundBook */,
+				5E2A7AE3204F628B00F4E17A /* Config Files */,
+				5E1004BD208E7F6E00BCFE70 /* LICENSE */,
+				5EA2E3D52056F83400416A35 /* Supporting Content */,
+				9CD0F8CA26220E9400246ED7 /* LightningSimulatorTestapp */,
+				5E086DA4204F706E004D8D25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E2A7AE3204F628B00F4E17A /* Config Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E0E37522065981C008FA4BE /* BuildSettings.xcconfig */,
+				5E0E3751206597E7008FA4BE /* Base */,
+				5E0E3753206599A0008FA4BE /* Overrides */,
+			);
+			name = "Config Files";
+			path = ConfigFiles;
+			sourceTree = "<group>";
+		};
+		5E6F7E5A2367B621008CC191 /* BookAPI.playgroundmodule */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F7E5B2367B632008CC191 /* Sources */,
+			);
+			path = BookAPI.playgroundmodule;
+			sourceTree = "<group>";
+		};
+		5E6F7E5B2367B632008CC191 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F7E5C2367B64A008CC191 /* BookAPI.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5E70679B23678D810094BDEF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5E70679C23678D8A0094BDEF /* BookCore.playgroundmodule */,
+				5E6F7E5A2367B621008CC191 /* BookAPI.playgroundmodule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5E70679C23678D8A0094BDEF /* BookCore.playgroundmodule */ = {
+			isa = PBXGroup;
+			children = (
+				5E70679D23678DA00094BDEF /* Sources */,
+			);
+			path = BookCore.playgroundmodule;
+			sourceTree = "<group>";
+		};
+		5E70679D23678DA00094BDEF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C3155AE262300A500FF8736 /* SimulationCore */,
+				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
+				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5EA2E3D52056F83400416A35 /* Supporting Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EA2E3D62056F84000416A35 /* Playgrounds Frameworks */,
+				5EBEC2EE205B395200975D3F /* Other Frameworks */,
+			);
+			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		5EA2E3D62056F84000416A35 /* Playgrounds Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EA2E3D82056F88700416A35 /* PlaygroundBluetooth.framework */,
+				5EA2E3D72056F88700416A35 /* PlaygroundSupport.framework */,
+			);
+			name = "Playgrounds Frameworks";
+			sourceTree = "<group>";
+		};
+		5EBEC2EE205B395200975D3F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBEC2EF205B396500975D3F /* LiveViewHost.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5EF2F9792054B64800191409 /* PrivateResources */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C761261F7A71008E8DE5 /* Images */,
+				9C50C73D261F743B008E8DE5 /* Sounds */,
+				9C4A8D4C261C649F00EEAE99 /* coverOld.jpeg */,
+				9C5440F9262ADC5000E649D2 /* cover.jpeg */,
+				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
+				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
+				5E551EC42371FC3F00784365 /* Assets.xcassets */,
+				9CE6DE5F2619B7F100F7AEB7 /* Glossary.plist */,
+			);
+			path = PrivateResources;
+			sourceTree = "<group>";
+		};
+		5EF2F9A42054BB9500191409 /* Supporting Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E70679E23678DC00094BDEF /* Modules */,
+			);
+			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		9C005DD926247F2E002EA4B5 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				9CE6DDED2618E3BA00F7AEB7 /* RRT.swift */,
+				9C005DD226247C2C002EA4B5 /* Negative RRT.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		9C3155AE262300A500FF8736 /* SimulationCore */ = {
+			isa = PBXGroup;
+			children = (
+				9CBF7B842626F43A00C7D1C4 /* Buildings */,
+				9CBF7B8C2626F88200C7D1C4 /* Bolt Generation.swift */,
+				9C9E1CFF25B4470000968630 /* SimulationScene.swift */,
+				9CBF7B9D262702E800C7D1C4 /* Lines.swift */,
+				9C9E1CFD25B4470000968630 /* SimulationViewController.swift */,
+				9C9E1CFE25B4470000968630 /* Functions.swift */,
+				9C005DD926247F2E002EA4B5 /* Structures */,
+				9CD0F93F2622150200246ED7 /* Decorations & Effects */,
+				9C5442A3262B1FBB00E649D2 /* Layers.swift */,
+			);
+			path = SimulationCore;
+			sourceTree = "<group>";
+		};
+		9C50C73D261F743B008E8DE5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C73E261F7441008E8DE5 /* Thunder */,
+				9C50C729261F7115008E8DE5 /* rain.wav */,
+				9C50C81326205E38008E8DE5 /* chicken.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9C50C73E261F7441008E8DE5 /* Thunder */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C72F261F7165008E8DE5 /* thunder1.wav */,
+				9C50C73F261F7451008E8DE5 /* thunder2.wav */,
+				9C50C74B261F7489008E8DE5 /* thunder3.wav */,
+			);
+			path = Thunder;
+			sourceTree = "<group>";
+		};
+		9C50C761261F7A71008E8DE5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C7EA26204DC6008E8DE5 /* Clouds */,
+				9C50C6D9261F140B008E8DE5 /* chicken.png */,
+				9C4A8D08261C5B5700EEAE99 /* lightningAirplane.png */,
+				9C50C762261F7A78008E8DE5 /* Buildings */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9C50C762261F7A78008E8DE5 /* Buildings */ = {
+			isa = PBXGroup;
+			children = (
+				9C9FCA3F2619C9B500DB32E8 /* church.png */,
+				9C9FCA3D2619C9B500DB32E8 /* house.png */,
+				9C9FCA3C2619C9B500DB32E8 /* leafy.png */,
+				9C9FCA552619CB6500DB32E8 /* trees.png */,
+				9C9FCA3E2619C9B500DB32E8 /* pine.png */,
+				9C9FCA3B2619C9B500DB32E8 /* plane.png */,
+			);
+			path = Buildings;
+			sourceTree = "<group>";
+		};
+		9C50C7EA26204DC6008E8DE5 /* Clouds */ = {
+			isa = PBXGroup;
+			children = (
+				9CD0F8502621FFCE00246ED7 /* Small */,
+				9CD0F84F2621FFC900246ED7 /* Big */,
+			);
+			path = Clouds;
+			sourceTree = "<group>";
+		};
+		9CBF7B842626F43A00C7D1C4 /* Buildings */ = {
+			isa = PBXGroup;
+			children = (
+				9C9E1D0025B4470000968630 /* Definitions.swift */,
+				9C9E1CFC25B4470000968630 /* AddBuilding.swift */,
+				9C95C99F26233B1800D57E71 /* DataDecoder.swift */,
+				9C3155AF262301D300FF8736 /* SimuationMethods.swift */,
+			);
+			path = Buildings;
+			sourceTree = "<group>";
+		};
+		9CD0F84F2621FFC900246ED7 /* Big */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C7EB26204DCF008E8DE5 /* clouds1.png */,
+				9C50C7EC26204DCF008E8DE5 /* clouds2.png */,
+			);
+			path = Big;
+			sourceTree = "<group>";
+		};
+		9CD0F8502621FFCE00246ED7 /* Small */ = {
+			isa = PBXGroup;
+			children = (
+				9CD0F8522621FFDB00246ED7 /* cloud1.png */,
+				9CD0F8532621FFDB00246ED7 /* cloud2.png */,
+				9CD0F8512621FFDB00246ED7 /* cloud3.png */,
+			);
+			path = Small;
+			sourceTree = "<group>";
+		};
+		9CD0F8CA26220E9400246ED7 /* LightningSimulatorTestapp */ = {
+			isa = PBXGroup;
+			children = (
+				9CD0F8EC26220EB900246ED7 /* LightningSimulatorTestapp.entitlements */,
+				9CD0F8CB26220E9400246ED7 /* AppDelegate.swift */,
+				9CD0F8CD26220E9400246ED7 /* SceneDelegate.swift */,
+				9CD0F8D126220E9400246ED7 /* Main.storyboard */,
+				9CD0F8D426220E9500246ED7 /* Assets.xcassets */,
+				9CD0F8D626220E9500246ED7 /* LaunchScreen.storyboard */,
+				9CD0F8D926220E9500246ED7 /* Info.plist */,
+			);
+			path = LightningSimulatorTestapp;
+			sourceTree = "<group>";
+		};
+		9CD0F93F2622150200246ED7 /* Decorations & Effects */ = {
+			isa = PBXGroup;
+			children = (
+				9C005FFC2626F1A5002EA4B5 /* SoundManager.swift */,
+				9CD0F9402622151200246ED7 /* Moon.swift */,
+				9C087D3F2628466700167366 /* StarsLayer.swift */,
+				9CD0F9582622152B00246ED7 /* Bird.swift */,
+				9CD0F9602622153F00246ED7 /* Rain.swift */,
+				9CD0F9682622155300246ED7 /* Clouds.swift */,
+			);
+			path = "Decorations & Effects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E086DBF2051C5A7004D8D25 /* PlaygroundBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E086DC52051C5A7004D8D25 /* Build configuration list for PBXNativeTarget "PlaygroundBook" */;
+			buildPhases = (
+				5E086DD22051E35D004D8D25 /* Copy Book Contents */,
+				5E086DC62051DB17004D8D25 /* Resources */,
+				9C50C77A261F801A008E8DE5 /* Copy Files */,
+			);
+			buildRules = (
+				5E086DD42051E415004D8D25 /* PBXBuildRule */,
+			);
+			dependencies = (
+				5EF2F9B52054BDD100191409 /* PBXTargetDependency */,
+				5E6F7E6F2368FD7C008CC191 /* PBXTargetDependency */,
+				5E6F7E7F2368FF3D008CC191 /* PBXTargetDependency */,
+			);
+			name = PlaygroundBook;
+			productName = PlaygroundBook;
+			productReference = 5E086DC02051C5A7004D8D25 /* Lightning Simulator.playgroundbook */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5E6F7E602368FB6A008CC191 /* BookAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E6F7E652368FB6A008CC191 /* Build configuration list for PBXNativeTarget "BookAPI" */;
+			buildPhases = (
+				5E6F7E5D2368FB6A008CC191 /* Sources */,
+				5E6F7E5E2368FB6A008CC191 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E6F7E692368FB79008CC191 /* PBXTargetDependency */,
+			);
+			name = BookAPI;
+			productName = BookAPI;
+			productReference = 5E6F7E612368FB6A008CC191 /* libBookAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5E6F7E732368FF15008CC191 /* UserModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E6F7E782368FF15008CC191 /* Build configuration list for PBXNativeTarget "UserModule" */;
+			buildPhases = (
+				5E6F7E702368FF15008CC191 /* Sources */,
+				5E6F7E712368FF15008CC191 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E6F7E7C2368FF1D008CC191 /* PBXTargetDependency */,
+			);
+			name = UserModule;
+			productName = UserModule;
+			productReference = 5E6F7E742368FF15008CC191 /* libUserModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5EF2F9AA2054BBF300191409 /* BookCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF2F9AF2054BBF300191409 /* Build configuration list for PBXNativeTarget "BookCore" */;
+			buildPhases = (
+				5EF2F9A72054BBF300191409 /* Sources */,
+				5EF2F9A82054BBF300191409 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookCore;
+			productName = Book_Sources;
+			productReference = 5EF2F9AB2054BBF300191409 /* libBookCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9CD0F8C826220E9400246ED7 /* LightningSimulatorTestapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD0F8DC26220E9500246ED7 /* Build configuration list for PBXNativeTarget "LightningSimulatorTestapp" */;
+			buildPhases = (
+				9CD0F8C526220E9400246ED7 /* Sources */,
+				9CD0F8C626220E9400246ED7 /* Frameworks */,
+				9CD0F8C726220E9400246ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightningSimulatorTestapp;
+			productName = LightningSimulatorTestapp;
+			productReference = 9CD0F8C926220E9400246ED7 /* LightningSimulatorTestapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E2A7ADD204F611300F4E17A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					5E086DBF2051C5A7004D8D25 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5E6F7E602368FB6A008CC191 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					5E6F7E732368FF15008CC191 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					5EF2F9AA2054BBF300191409 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
+					};
+					9CD0F8C826220E9400246ED7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5E2A7AE0204F611300F4E17A /* Build configuration list for PBXProject "PlaygroundBook" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E2A7ADC204F611300F4E17A;
+			productRefGroup = 5E086DA4204F706E004D8D25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E086DBF2051C5A7004D8D25 /* PlaygroundBook */,
+				5EF2F9AA2054BBF300191409 /* BookCore */,
+				5E6F7E602368FB6A008CC191 /* BookAPI */,
+				5E6F7E732368FF15008CC191 /* UserModule */,
+				9CD0F8C826220E9400246ED7 /* LightningSimulatorTestapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E086DC62051DB17004D8D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE6DE602619B7F100F7AEB7 /* Glossary.plist in Resources */,
+				9CD0F8552621FFDB00246ED7 /* cloud1.png in Resources */,
+				9CD0F8562621FFDB00246ED7 /* cloud2.png in Resources */,
+				9C50C74C261F7489008E8DE5 /* thunder3.wav in Resources */,
+				9C50C740261F7451008E8DE5 /* thunder2.wav in Resources */,
+				9C5440FA262ADC5000E649D2 /* cover.jpeg in Resources */,
+				9C9FCA562619CB6500DB32E8 /* trees.png in Resources */,
+				9C9FCA422619C9B500DB32E8 /* house.png in Resources */,
+				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				9C50C7ED26204DCF008E8DE5 /* clouds1.png in Resources */,
+				9C50C72A261F7115008E8DE5 /* rain.wav in Resources */,
+				9C50C81426205E38008E8DE5 /* chicken.wav in Resources */,
+				9C50C6DA261F140B008E8DE5 /* chicken.png in Resources */,
+				9C9FCA402619C9B500DB32E8 /* plane.png in Resources */,
+				9C50C7EE26204DCF008E8DE5 /* clouds2.png in Resources */,
+				9C9FCA442619C9B500DB32E8 /* church.png in Resources */,
+				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
+				9C4A8D09261C5B5700EEAE99 /* lightningAirplane.png in Resources */,
+				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
+				9CD0F8542621FFDB00246ED7 /* cloud3.png in Resources */,
+				9C50C76C261F7F7E008E8DE5 /* License.txt in Resources */,
+				9C9FCA412619C9B500DB32E8 /* leafy.png in Resources */,
+				9C9FCA432619C9B500DB32E8 /* pine.png in Resources */,
+				9C50C730261F7165008E8DE5 /* thunder1.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD0F8C726220E9400246ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD0F92726220F2800246ED7 /* thunder2.wav in Resources */,
+				9CD0F91426220F1F00246ED7 /* house.png in Resources */,
+				9CD0F90E26220F1A00246ED7 /* clouds2.png in Resources */,
+				9CD0F91F26220F2400246ED7 /* chicken.wav in Resources */,
+				9CD0F9392622107B00246ED7 /* Assets.xcassets in Resources */,
+				9CD0F91826220F1F00246ED7 /* plane.png in Resources */,
+				9CD0F90526220F1600246ED7 /* cloud2.png in Resources */,
+				9CD0F8D826220E9500246ED7 /* LaunchScreen.storyboard in Resources */,
+				9CD0F92026220F2400246ED7 /* rain.wav in Resources */,
+				9CD0F90D26220F1A00246ED7 /* clouds1.png in Resources */,
+				9CD0F91526220F1F00246ED7 /* leafy.png in Resources */,
+				9CD0F90626220F1600246ED7 /* cloud1.png in Resources */,
+				9CD0F8D526220E9500246ED7 /* Assets.xcassets in Resources */,
+				9CD0F92E26220F2C00246ED7 /* Glossary.plist in Resources */,
+				9CD0F92826220F2800246ED7 /* thunder1.wav in Resources */,
+				9CD0F8D326220E9400246ED7 /* Main.storyboard in Resources */,
+				9CD0F91626220F1F00246ED7 /* church.png in Resources */,
+				9CD0F8FE26220F1000246ED7 /* chicken.png in Resources */,
+				9CD0F8FF26220F1000246ED7 /* lightningAirplane.png in Resources */,
+				9CD0F90726220F1600246ED7 /* cloud3.png in Resources */,
+				9CD0F92626220F2800246ED7 /* thunder3.wav in Resources */,
+				9CD0F91726220F1F00246ED7 /* pine.png in Resources */,
+				9CD0F91926220F1F00246ED7 /* trees.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E6F7E5D2368FB6A008CC191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6F7E6C2368FC01008CC191 /* BookAPI.swift in Sources */,
+				9C5442AB262B208600E649D2 /* Layers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E6F7E702368FF15008CC191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5442B1262B208600E649D2 /* Layers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF2F9A72054BBF300191409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
+				9C31555D2622FAE700FF8736 /* AddBuilding.swift in Sources */,
+				9C3155542622FAE400FF8736 /* Bird.swift in Sources */,
+				9C5442A4262B1FBB00E649D2 /* Layers.swift in Sources */,
+				9C3155532622FAE400FF8736 /* Clouds.swift in Sources */,
+				9C31555E2622FAE700FF8736 /* RRT.swift in Sources */,
+				9C3155B0262301D300FF8736 /* SimuationMethods.swift in Sources */,
+				9C31555B2622FAE700FF8736 /* Functions.swift in Sources */,
+				9C31555C2622FAE700FF8736 /* SimulationViewController.swift in Sources */,
+				9C3155552622FAE400FF8736 /* Rain.swift in Sources */,
+				9C3155522622FAE400FF8736 /* Moon.swift in Sources */,
+				9C005DD326247C2C002EA4B5 /* Negative RRT.swift in Sources */,
+				9C3155602622FAE700FF8736 /* SimulationScene.swift in Sources */,
+				9CBF7B8D2626F88200C7D1C4 /* Bolt Generation.swift in Sources */,
+				9CBF7B9E262702E800C7D1C4 /* Lines.swift in Sources */,
+				9C31555F2622FAE700FF8736 /* Definitions.swift in Sources */,
+				9C95C9A026233B1800D57E71 /* DataDecoder.swift in Sources */,
+				9C087D402628466700167366 /* StarsLayer.swift in Sources */,
+				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
+				9C005FFD2626F1A5002EA4B5 /* SoundManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD0F8C526220E9400246ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBF7BB226270D2000C7D1C4 /* Bolt Generation.swift in Sources */,
+				9CBF7BB326270D2000C7D1C4 /* SimulationScene.swift in Sources */,
+				9CBF7BB426270D2000C7D1C4 /* Lines.swift in Sources */,
+				9C5442A5262B1FBB00E649D2 /* Layers.swift in Sources */,
+				9CBF7BB526270D2000C7D1C4 /* SimulationViewController.swift in Sources */,
+				9CBF7BB626270D2000C7D1C4 /* Functions.swift in Sources */,
+				9CBF7BB726270D2000C7D1C4 /* RRT.swift in Sources */,
+				9CBF7BB826270D2000C7D1C4 /* Negative RRT.swift in Sources */,
+				9CBF7BBA26270D2000C7D1C4 /* SoundManager.swift in Sources */,
+				9CBF7BBB26270D2000C7D1C4 /* Moon.swift in Sources */,
+				9CBF7BBC26270D2000C7D1C4 /* Bird.swift in Sources */,
+				9CBF7BBD26270D2000C7D1C4 /* Rain.swift in Sources */,
+				9CBF7BCE26270D5300C7D1C4 /* AppDelegate.swift in Sources */,
+				9CBF7BBE26270D2000C7D1C4 /* Clouds.swift in Sources */,
+				9CBF7BA926270D1600C7D1C4 /* Definitions.swift in Sources */,
+				9CBF7BAA26270D1600C7D1C4 /* AddBuilding.swift in Sources */,
+				9CBF7BD426270D5900C7D1C4 /* SceneDelegate.swift in Sources */,
+				9C087D412628466700167366 /* StarsLayer.swift in Sources */,
+				9CBF7BAB26270D1600C7D1C4 /* DataDecoder.swift in Sources */,
+				9CBF7BAC26270D1600C7D1C4 /* SimuationMethods.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E6F7E692368FB79008CC191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF2F9AA2054BBF300191409 /* BookCore */;
+			targetProxy = 5E6F7E682368FB79008CC191 /* PBXContainerItemProxy */;
+		};
+		5E6F7E6F2368FD7C008CC191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E6F7E602368FB6A008CC191 /* BookAPI */;
+			targetProxy = 5E6F7E6E2368FD7C008CC191 /* PBXContainerItemProxy */;
+		};
+		5E6F7E7C2368FF1D008CC191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E6F7E602368FB6A008CC191 /* BookAPI */;
+			targetProxy = 5E6F7E7B2368FF1D008CC191 /* PBXContainerItemProxy */;
+		};
+		5E6F7E7F2368FF3D008CC191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E6F7E732368FF15008CC191 /* UserModule */;
+			targetProxy = 5E6F7E7E2368FF3D008CC191 /* PBXContainerItemProxy */;
+		};
+		5EF2F9B52054BDD100191409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF2F9AA2054BBF300191409 /* BookCore */;
+			targetProxy = 5EF2F9B42054BDD100191409 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E086DCD2051DDB8004D8D25 /* Base */,
+			);
+			name = LiveView.storyboard;
+			sourceTree = "<group>";
+		};
+		5EF2F97E2054B6E400191409 /* ManifestPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EF2F97D2054B6E400191409 /* en */,
+			);
+			name = ManifestPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CD0F8D126220E9400246ED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD0F8D226220E9400246ED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CD0F8D626220E9500246ED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD0F8D726220E9500246ED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E086DC32051C5A7004D8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
+				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5E086DC42051C5A7004D8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
+				INSTALL_PATH = /;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
+				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		5E2A7AE1204F611300F4E17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0E37522065981C008FA4BE /* BuildSettings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		5E2A7AE2204F611300F4E17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0E37522065981C008FA4BE /* BuildSettings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		5E6F7E662368FB6A008CC191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5E6F7E672368FB6A008CC191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		5E6F7E792368FF15008CC191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5E6F7E7A2368FF15008CC191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		5EF2F9B02054BBF300191409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5EF2F9B12054BBF300191409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F7E6D2368FC9A008CC191 /* ModuleOverridingBuildSettings.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		9CD0F8DA26220E9500246ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = LightningSimulatorTestapp/LightningSimulatorTestapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QFSV6DH55;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INFOPLIST_FILE = LightningSimulatorTestapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madrau.LightningSimulatorTestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CD0F8DB26220E9500246ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = LightningSimulatorTestapp/LightningSimulatorTestapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QFSV6DH55;
+				INFOPLIST_FILE = LightningSimulatorTestapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madrau.LightningSimulatorTestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E086DC52051C5A7004D8D25 /* Build configuration list for PBXNativeTarget "PlaygroundBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E086DC32051C5A7004D8D25 /* Debug */,
+				5E086DC42051C5A7004D8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2A7AE0204F611300F4E17A /* Build configuration list for PBXProject "PlaygroundBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2A7AE1204F611300F4E17A /* Debug */,
+				5E2A7AE2204F611300F4E17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E6F7E652368FB6A008CC191 /* Build configuration list for PBXNativeTarget "BookAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6F7E662368FB6A008CC191 /* Debug */,
+				5E6F7E672368FB6A008CC191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E6F7E782368FF15008CC191 /* Build configuration list for PBXNativeTarget "UserModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6F7E792368FF15008CC191 /* Debug */,
+				5E6F7E7A2368FF15008CC191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF2F9AF2054BBF300191409 /* Build configuration list for PBXNativeTarget "BookCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF2F9B02054BBF300191409 /* Debug */,
+				5EF2F9B12054BBF300191409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD0F8DC26220E9500246ED7 /* Build configuration list for PBXNativeTarget "LightningSimulatorTestapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD0F8DA26220E9500246ED7 /* Debug */,
+				9CD0F8DB26220E9500246ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E2A7ADD204F611300F4E17A /* Project object */;
+}

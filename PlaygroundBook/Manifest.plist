@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>7.1</string>
+	<key>ContentIdentifier</key>
+	<string>$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)</string>
+	<key>ContentVersion</key>
+	<string>$(PLAYGROUND_BOOK_CONTENT_VERSION)</string>
+	<key>ImageReference</key>
+	<string>cover.jpeg</string>
+	<key>DevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>DeploymentTarget</key>
+	<string>$(PLAYGROUND_BOOK_DEPLOYMENT_TARGET_FOR_MANIFEST)</string>
+	<key>SwiftVersion</key>
+	<string>$(SWIFT_VERSION)</string>
+	<key>Name</key>
+	<string>Lightning Simulator</string>
+	<key>Chapters</key>
+	<array>
+		<string>Chapter1.playgroundchapter</string>
+	</array>
+	<key>UserAutoImportedAuxiliaryModules</key>
+	<array>
+		<string>BookAPI</string>
+	</array>
+	<key>UserModuleMode</key>
+	<string>Disabled</string>
+	<key>SupportsDarkMode</key>
+	<true/>
+	<key>SupportsMacIdiom</key>
+	<false/>
+	<key>EnableConsole</key>
+	<false/>
+	<key>MinimumSwiftPlaygroundsVersion</key>
+	<string>3.2</string>
+</dict>
+</plist>
